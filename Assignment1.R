@@ -3,27 +3,31 @@
 # "I pledge my honor I have abided by the Stevens Honor System."
 # Fall 2019, Stevens Institute of Technology
 
-
 # Please submit R code as well as a pdf file to include results. 10 points will be deducted if there is any missing file.
+
 # Exercise I
 # Vector
 # – Create two vectors for your first name and last name separately.
-?vec
+?vector
+firstname <- c(first = "Yoohan")
+lastname <- c(last = "Ko")
+is.vector(firstname) # Make sure that these vectors have been created correctly
+is.vector(lastname)
 
 # – Combine the two vectors.
-
+fullname <- c(firstname, lastname)
 
 # – Display data type of the vector.
-
+typeof(fullname)
 
 # – Append campus ID to the vector.
-
+fullname <- c(fullname, cwid = 10412352)
 
 # – Transfer the vector to data frame. Set a name for each column/row.
-
+data.frame(fullname)
 
 # – How missing values and impossible values are represented in R language?
-
+  # Answer: Missing and impossible values are reprensented by symbol 'NA' in the R language
 
 
 
